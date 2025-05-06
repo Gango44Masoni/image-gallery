@@ -1,0 +1,58 @@
+.gallery-container {
+    text-align: center;
+  }
+  
+  .main-image img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .controls {
+    margin: 10px 0;
+  }
+  
+  .controls button {
+    padding: 8px 15px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .thumbnails img {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: border 0.3s;
+  }
+  
+  .thumbnails img.selected {
+    border: 2px solid #007bff;
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0.2;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
